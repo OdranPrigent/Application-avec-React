@@ -1,0 +1,24 @@
+@import './setting.scss';
+
+.card {
+  
+  background-color: $cardColor;
+  width: 30%;
+  height: 300px;
+  p {
+    color: white;
+    margin-top: 45%;
+    margin-left: 20px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+  column-gap: 20px;
+  background-color: gray;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
