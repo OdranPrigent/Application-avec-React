@@ -1,24 +1,56 @@
 @import './setting.scss';
 
 .card {
-  
-  background-color: $cardColor;
-  width: 30%;
-  height: 300px;
-  p {
+
+  .title {
+    position: absolute;
+    margin-top: 140px;
     color: white;
-    margin-top: 45%;
     margin-left: 20px;
+    width: 150px;
   }
 }
 
-.cards {
-  display: flex;
-  flex-direction: row;
-  row-gap: 20px;
-  column-gap: 20px;
-  background-color: gray;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
+.logo {
+  margin-left: 10px;
 }
+
+nav {
+    margin-left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+  text-decoration: none;
+  display: flex;
+  column-gap: 35px;
+  font-size: 25px;
+  color: black!important;
+  margin-top: 25px;
+}
+
+.gallery {
+  display:flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #F6F6F6;
+  padding:20px;
+  border-style: solid;
+  border-color: #F6F6F6;
+  border-radius: 20px;
+  margin-top: 10px;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.galleryPicture {
+  object-fit: cover;
+  width: 215px;
+  height: 215px;
+}
+
+
+
