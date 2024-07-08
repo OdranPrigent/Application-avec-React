@@ -3,6 +3,7 @@ const SVGComponent = (props) => (
   <svg
     viewBox="0 0 1600 250"
     xmlns="http://www.w3.org/2000/svg"
+    width= "100%"
     {...props}
   >
     <path transform="translate(0)" d="m0 0h1600v250h-1600z" fill="#897A6C" />

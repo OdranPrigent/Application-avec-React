@@ -3,20 +3,11 @@ import Card from '../../components/Card/'
 import Banner from '../../components/Banner/'
 import Logements from '../../backend/logements'
 
-function gallery (){
-  return <>
-  <Card
-    key="bla"
-    label="blo"
-    picture= ""
-    title="job"
-  />
-  </>
-}
-
 function Accueil (){
   return <>
-    <Banner/>
+    <Banner
+      img = "1"
+    />
     {createCard ()}
   </>
 }

@@ -34,10 +34,10 @@ nav {
 .gallery {
   display:flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 86%;
   margin-left: 5%;
   background-color: #F6F6F6;
-  padding:20px;
+  padding:2%;
   border-style: solid;
   border-color: #F6F6F6;
   border-radius: 20px;
@@ -52,5 +52,44 @@ nav {
   height: 215px;
 }
 
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
+.openCollapse {
+  background-color: #ccc;
+  width: 100%;
+  display: none;
+}
 
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.imgBanner {
+  width: 100%;
+}
+
+.aproposC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-left: 20%;
+  row-gap: 20px;
+}

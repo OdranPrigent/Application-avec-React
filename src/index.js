@@ -11,7 +11,7 @@ import './style/App.scss';
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/Apropos" element={<Apropos />} />
