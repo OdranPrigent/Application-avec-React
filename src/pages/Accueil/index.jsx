@@ -12,10 +12,13 @@ function Accueil (){
   </>
 }
 
+
 function createCard (){
+
   let cards = [];
   for (let i = 0; i < 20; i++) {
-    cards.push(<Link to="/Logement"><Card
+    cards.push(<Link to={`/Logement/${i}`} key={i}>
+      <Card
       key=""
       picture= <Logements
         index={i}
@@ -25,7 +28,8 @@ function createCard (){
         index={i}
         s="title"
       />
-    /></Link>);
+    />
+    </Link>);
   }
   return <div class="gallery">{cards}</div>
 }

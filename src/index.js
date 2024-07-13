@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Apropos from './pages/Apropos'
 import Logement from './pages/Logement'
-import Error from './components/Error'
+import Error from './pages/Error'
 import './style/App.scss';
 
 ReactDOM.render(
@@ -15,9 +16,11 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/Apropos" element={<Apropos />} />
-        <Route path="/Logement" element={<Logement />} />
+        <Route path="/Logement/:id" element={<Logement />} />
+        <Route path="/404" element={<Error />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer/>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

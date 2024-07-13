@@ -1,5 +1,9 @@
 @import './setting.scss';
 
+body, html { 
+  font-family: 'Montserrat', sans-serif;
+}
+
 .card {
 
   .title {
@@ -25,7 +29,7 @@ nav {
 .navigation {
   text-decoration: none;
   display: flex;
-  column-gap: 35px;
+  column-gap: 70px;
   font-size: 25px;
   color: black!important;
   margin-top: 25px;
@@ -41,7 +45,7 @@ nav {
   border-style: solid;
   border-color: #F6F6F6;
   border-radius: 20px;
-  margin-top: 10px;
+  margin-top: -30px;
   justify-content: space-between;
   row-gap: 20px;
 }
@@ -53,25 +57,29 @@ nav {
 }
 
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: #FF6060;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  padding: 18px;
+  padding: 12px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 24px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .openCollapse {
-  background-color: #ccc;
-  width: 100%;
-  display: none;
+  background-color: ghostwhite;
+  padding: 12px;
+  border-radius: 5px;
 }
 
-.active, .collapsible:hover {
-  background-color: #ccc;
+.chevron {
+  margin-right: 0px;
 }
 
 .content {
@@ -81,15 +89,67 @@ nav {
   background-color: #f1f1f1;
 }
 
+.imgBannerAccueil {
+  width: 90%;
+  margin-left: 5%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px #000000);
+    filter: brightness(0.25);
+    margin-top: 40px;
+}
+
 .imgBanner {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 40px;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px #000000);
+    filter: brightness(0.7);
+  margin-bottom: 30px;
+}
+
+.banner {
+  color:white;
+  font-size: 48px;
+  margin-top: -130px;
+  z-index:1;
+  position: relative;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .aproposC {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
-  margin-left: 20%;
+  width: 74%;
+  margin-left: 13%;
   row-gap: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 209px;
+  color:white;
+  background-color: #000000;
+  p {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    
+    svg {
+      margin-top: 7px;
+      margin-right: 3px;
+    }
+  }
+  .logoFooter{
+    padding-top: 40px;
+    font-size: 40px;
+  }
 }
