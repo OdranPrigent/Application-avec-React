@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Card from '../../components/Card/'
 import Banner from '../../components/Banner/'
 import Logements from '../../backend/logements'
+import log from '../../assets/logements.json'
 
 function Accueil (){
   return <>
@@ -14,10 +15,10 @@ function Accueil (){
 
 
 function createCard (){
-
+let l = log.length
   let cards = [];
-  for (let i = 0; i < 20; i++) {
-    cards.push(<Link to={`/Logement/${i}`} key={i}>
+  for (let i = 0; i < l; i++) {
+    cards.push(<Link to={`/Logement/${log[i].id}`} key={log[i].id}>
       <Card
       key=""
       picture= <Logements
