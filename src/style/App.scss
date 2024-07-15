@@ -5,7 +5,6 @@ body, html {
 }
 
 .card {
-
   .title {
     position: absolute;
     margin-top: 140px;
@@ -31,6 +30,7 @@ nav {
     width: 90%;
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 .navigation {
@@ -57,30 +57,43 @@ nav {
   row-gap: 20px;
 }
 
+@keyframes test {
+  from { height: 0%;}
+  to { height: 100%; }
+}
+
+.openCollapse {
+  background-color: ghostwhite;
+  animation-name: test;
+  animation-duration: 2s; 
+  animation-delay: 1s; 
+}
 .collapsible {
   background-color: #FF6060;
   color: white;
   font-weight: bold;
   cursor: pointer;
-  padding: 12px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 24px;
-  border-radius: 5px;
+  font-size: 18px;
+  border-radius: 7px;
   display: flex;
   justify-content: space-between;
+  padding-top: 11px;
+  padding-left: 9px;
+  padding-bottom: 6px;
 }
 
-.openCollapse {
-  background-color: ghostwhite;
-  padding: 12px;
-  border-radius: 5px;
-}
 
 .chevron {
-  margin-right: 0px;
+  margin-top: -8px;
+}
+
+.chevronF {
+  margin-top: -3px;
+  margin-bottom: -6px;
 }
 
 .content {
@@ -137,14 +150,15 @@ nav {
 
 .carrousel {
   display: flex;
-  width: 90%;
-  margin-left: 5%;
+  margin-top: 50px;
 
   button {
     height: 50px;
     margin-top: 225px;
     width: 50px;
     z-index: 2;
+    border: none;
+    background-color: transparent;
   }
   #imgC{
     width: 100%;
@@ -152,13 +166,14 @@ nav {
     object-fit: cover;
     margin-left: -50px;
     margin-right: -50px;
+    border-radius: 20px;
   }
 }
 
 .logement {
-
+  margin-left: 5%;
+  width: 90%;
   h1 {
-    margin-left: 5%;
     font-size: 32px;
     color: #FF6060;
     font-weight: 150;
@@ -167,17 +182,67 @@ nav {
   .logC {
     display:flex;
     justify-content: space-between;
-    width: 90%;
-    margin-left: 5%;
     margin-top: 20px;
   }
 
   .location{
-    width: 90%;
-    margin-left: 5%;
-    margin-top: -25px;
+    margin-top: -50px;
+    margin-bottom: 22px;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  .tags{
+    display:flex;
+    column-gap: 8px;
+    color:white;
+    .tag{
+      background-color: #FF6060;
+      border-radius: 17px;
+      padding: 3px;
+      font-size: 13px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+
+  .topH{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    h1{
+      margin-top:-20px;
+    }
+    .host {
+      display:flex;
+      justify-content: end;
+      column-gap: 15px;
+      p{
+        color: #FF6060;
+        width: 80px;
+        margin-top: 20px;
+        text-align: right;
+      }
+  
+      img{
+        height: 60px;
+        border-radius: 50px;
+      }
+    }
+  }
+  
+  .tagsR{
+    display :flex;
+    justify-content: space-between;
+  }
+
+  .rate {
+    display: flex;
+    column-gap: 12px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 

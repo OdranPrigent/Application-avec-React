@@ -24,6 +24,11 @@ function logements({s, index}){
     </ul>  
   else if (s == "location")
     return <p key={log[index].location} class = "location" >{log[index].location}</p>
+  else if (s=="hostN")
+    return <p key={log[index].host} >{log[index].host.name}</p>
+  else if (s=="hostP")
+    return <img src={log[index].host.picture}/>
+
 }
 
 export default logements
