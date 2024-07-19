@@ -11,11 +11,11 @@ function logements({s, index}){
       ))}
     </ul>
   else if (s == "title")
-    return <p key={log[index].title}p>{log[index].title}</p>
+    return <p key={log[index].title} class="title">{log[index].title}</p>
   else if (s == "picture")
     return <img key={log[index].cover} class="galleryPicture" src={log[index].cover}/>
   else if (s == "description")
-    return <p key={log[index].description}p>{log[index].description}</p>
+    return <p key={log[index].description}>{log[index].description}</p>
   else if (s == "equipments")
     return <ul>
       {log[index].equipments.map((log) => (
