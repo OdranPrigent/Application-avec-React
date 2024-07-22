@@ -5,6 +5,22 @@ body, html {
   margin:0;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin:0;
+}
+
+header {
+  padding: 10px;
+}
+
+main {
+  flex: 1;
+
+}
+
 .error {
   font-size: 100px;
   color:#FF6060;
@@ -58,6 +74,16 @@ nav {
   font-size: 25px;
   color: black!important;
   margin-top: 25px;
+
+  a:link {
+    text-decoration: none;
+    color: initial;
+  }
+  
+  a:visited {
+    text-decoration: none; 
+    color: initial;
+  }
 }
 
 .gallery {
@@ -78,21 +104,27 @@ nav {
     z-index: 1;
 }
 
-@keyframes test {
-  from { height: 0%;}
-  to { height: 100%; }
-}
-
 .openCollapse {
   max-height: 0;
   overflow: hidden;
   background-color: #F6F6F6;
-  transition: max-height 1s ease-out;
+  transition: max-height 0.5s ;
+  margin-top: -10px;
+
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.chevron {
+  transition: transform 0.2s;
 }
 
 .openCollapse.collapsed {
   max-height: 500px; 
 }
+
 .collapsible {
   background-color: #FF6060;
   color: white;
@@ -102,19 +134,20 @@ nav {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
+  font-size: 24px;
   border-radius: 7px;
   display: flex;
   justify-content: space-between;
-  padding-top: 11px;
+  padding-top: 17px;
   padding-left: 9px;
-  padding-bottom: 6px;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
 }
 
-.chevronF {
-  margin-top: -3px;
-  margin-bottom: -6px;
-  transform: rotate(0deg);
+.chevron {
+  margin-top: -4px;
+  margin-right: 9px;
+  width: 27px;
 }
 
 .imgBannerAccueil {
@@ -173,6 +206,11 @@ nav {
     background-color: transparent;
     margin-left: 25px;
   }
+
+  button:hover {
+    cursor:pointer;
+  }
+
   #imgC{
     width: 100%;
     height: 400px;
@@ -240,8 +278,11 @@ nav {
       p{
         color: #FF6060;
         width: 80px;
-        margin-top: 20px;
+        margin-top: 0px;
         text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
   
       img{
@@ -268,18 +309,15 @@ nav {
 }
 
 .footer {
-  width: 110%;
+  width: 100%;
   height: 209px;
   color: white;
   background-color: #000000;
-  margin-left: -5%;
-
-  bottom: 0px;
+  margin-top: auto;
   p {
     display: flex;
     justify-content: center;
     letter-spacing: 3px;
-    
     svg {
       margin-top: 7px;
       margin-right: 3px;
@@ -287,12 +325,92 @@ nav {
   }
   .logoFooter{
     font-size: 40px;
-    padding-top: 0px;
+    padding-top: 75px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .card {
     width: 100%;
+  }
+
+  .imgBannerAccueil {
+    height: 111px;
+    filter: drop-shadow(0px 0px 0px rgb(250, 250, 250)) brightness(0.35);
+  }
+
+  .banner {
+    font-size: 24px;
+    margin-top: -83px;
+    width: 250px;
+    margin-left: 8%;
+    margin-bottom: 70px;
+  }
+
+  .gallery{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    margin-left: 3%;
+  }
+
+  nav {
+    svg {
+      height: 33px;
+      width: 33px;
+    }
+    .logo {
+      margin-left: 0px;
+    }
+    .Logo {
+      width: 150px;
+      margin-top: -10px;
+    }
+    .navigation {
+      column-gap: 25px;
+      font-size: 19px;
+      margin-top:0px;
+    }
+    .K {
+      height: 43px;
+      width: 43px;
+    }
+  }
+
+  .collapsible {
+    font-size: 13px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+  .aproposC{
+    margin-left: 5%;
+    width: 90%;
+    row-gap: 15px;
+  }
+  .chevron {
+    width: 22px;
+    margin-top: -9px;
+  }
+  .openCollapse {
+    font-size: 14px;
+  }
+
+  .imgBanner {
+    height: 111px;
+    filter: drop-shadow(0px 0px 0px rgb(250, 250, 250)) brightness(0.7);
+    border-radius: 10px;
+  }
+
+  footer {
+    .logoFooter{
+      padding-top: 45px!important;
+      margin-bottom: -10px;
+    }
+    .rights {
+      margin-left: 140px;
+      margin-right: 130px;
+      font-size: 12px;
+      letter-spacing: 0px;
+    }
   }
 }
