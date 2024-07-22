@@ -167,21 +167,27 @@ nav {
   margin-top: 50px;
 
   button {
-    height: 50px;
-    margin-top: 175px;
     width: 50px;
     z-index: 2;
     border: none;
     background-color: transparent;
+    margin-left: 25px;
   }
   #imgC{
     width: 100%;
     height: 400px;
     object-fit: cover;
-    margin-left: -50px;
-    margin-right: -50px;
+    margin-left: -75px;
+    margin-right: -100px;
     border-radius: 20px;
   }
+}
+#numC {
+  display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    color: white;
+    margin-bottom: 40px;
 }
 
 .logement {
@@ -282,5 +288,11 @@ nav {
   .logoFooter{
     font-size: 40px;
     padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    width: 100%;
   }
 }
