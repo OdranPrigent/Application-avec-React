@@ -33,18 +33,26 @@ function Logement (){
     <Log index={id} s="location"/>
     <div class="tagsR">
       <Tags id={id} />
+      <div class="ratePhone">
       <Rating id={id}/>
+        <div class="hostPhone">
+          <Log class="hostN" index={id} s="hostN"/>
+          <Log class="hostP" index={id} s="hostP"/>
+        </div>
+      </div>
     </div>
     <div class="logC">
     <Collapse
       title="Description"
       text=<Log index={id} s="description" />
       largeur="45%"
+      fontS="18px"
       />
       <Collapse
       title="Equipements"
       text=<Log index={id} s="equipments" />
       largeur="45%"
+      fontS="18px"
       />
       </div>
   </div>)

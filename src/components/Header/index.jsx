@@ -18,8 +18,8 @@ function Header() {
             </svg></div>
             
             <div class="navigation">
-                <Link to="/">Accueil</Link>
-                <Link to="/Apropos">A propos</Link>
+                <Link to="/">ACCUEIL</Link>
+                <Link to="/Apropos">A PROPOS</Link>
             </div>
         </nav>
     )

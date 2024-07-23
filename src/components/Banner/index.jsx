@@ -5,7 +5,7 @@ function Banner({img}){
     if (img == "1"){
         return <div>
                 <img src={Image} alt='falaise sur mer' className='imgBannerAccueil' />
-                <div class="banner"> Chez vous, partout et ailleurs</div></div>
+                <div class="banner"> <span>Chez vous,</span><span>partout et ailleurs</span></div></div>
     }
     else {
         return <div>
