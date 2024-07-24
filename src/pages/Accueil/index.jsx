@@ -5,8 +5,10 @@ import log from '../../assets/logements.json'
 import React, { useEffect } from 'react';
 
 function Accueil (){
-  document.getElementById('navAccueil').style.textDecoration="underline"
-  document.getElementById('navAPropos').style.textDecoration="none"
+  if (document.getElementById('navAccueil'))
+    document.getElementById('navAccueil').style.textDecoration="underline"
+  if (document.getElementById('navAPropos'))
+    document.getElementById('navAPropos').style.textDecoration="none"
 
   function handle(){
     const imgs = document.querySelectorAll('.galleryPicture');
@@ -14,6 +16,8 @@ function Accueil (){
       let l = img.clientWidth;
       img.style.height=(l+5)+"px";
     });
+    if (document.getElementById('navAccueil'))
+      document.getElementById('navAccueil').style.textDecoration="underline"
   }
   window.onresize = handle;
   useEffect(() => {handle()}, [])

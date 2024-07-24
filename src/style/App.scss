@@ -26,7 +26,7 @@ main {
   h1 {
     font-size: 288px;
     font-weight: 700;
-    color:redColor;
+    color:$redColor;
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
@@ -36,7 +36,7 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
-    color:redColor;
+    color:$redColor;
     font-size: 36px;
     font-weight: 500;
     margin-left: 8%;
@@ -157,7 +157,7 @@ nav {
 }
 
 .collapsible {
-  background-color: redColor;
+  background-color: $redColor;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -270,7 +270,7 @@ nav {
   width: 90%;
   h1 {
     font-size: 32px;
-    color: redColor;
+    color: $redColor;
     font-weight: 150;
   }
 
@@ -294,7 +294,7 @@ nav {
     flex-wrap: wrap;
     row-gap: 10px;
     .tag{
-      background-color: redColor;
+      background-color: $redColor;
       border-radius: 7px;
       padding: 3px;
       font-size: 13px;
@@ -316,7 +316,7 @@ nav {
       justify-content: end;
       column-gap: 15px;
       p{
-        color: redColor;
+        color: $redColor;
         width: 80px;
         margin-top: 0px;
         text-align: right;
@@ -476,7 +476,7 @@ nav {
     justify-content: end;
     column-gap: 15px;
     p{
-      color: redColor;
+      color: $redColor;
       width: 80px;
       margin-top: -12px;
       text-align: right;
