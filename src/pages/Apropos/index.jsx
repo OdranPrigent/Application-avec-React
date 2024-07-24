@@ -3,8 +3,10 @@ import Banner from '../../components/Banner/'
 import Collapse from '../../components/Collapse/'
 
 function Apropos (){
-  document.getElementById('navAccueil').style.textDecoration="none"
-  document.getElementById('navAPropos').style.textDecoration="underline"
+  if (document.getElementById('navAccueil'))
+    document.getElementById('navAccueil').style.textDecoration="none"
+  if (document.getElementById('navAPropos'))
+    document.getElementById('navAPropos').style.textDecoration="underline"
 
   return (<>
     <Banner

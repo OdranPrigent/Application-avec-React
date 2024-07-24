@@ -9,8 +9,10 @@ import Rating from '../../components/Rating'
 
 
 function Logement (){
-  document.getElementById('navAccueil').style.textDecoration="none"
-  document.getElementById('navAPropos').style.textDecoration="none"
+  if (document.getElementById('navAccueil'))
+    document.getElementById('navAccueil').style.textDecoration="none"
+  if (document.getElementById('navAPropos'))
+    document.getElementById('navAPropos').style.textDecoration="none"
 
   const {id} = useParams()
   let pageValid = false;
