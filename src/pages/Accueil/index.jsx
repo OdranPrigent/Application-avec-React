@@ -16,7 +16,7 @@ function Accueil (){
       let l = img.clientWidth;
       img.style.height=(l+5)+"px";
     });
-    if (document.getElementById('navAccueil'))
+    if (document.getElementById('navAccueil') && window.location.href =="http://localhost:3000/")
       document.getElementById('navAccueil').style.textDecoration="underline"
   }
   window.onresize = handle;
