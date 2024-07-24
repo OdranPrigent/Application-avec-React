@@ -6,10 +6,12 @@ import Loge from '../../assets/logements'
 import Tags from '../../components/Tags'
 import { useParams } from 'react-router-dom';
 import Rating from '../../components/Rating'
-import { Link } from 'react-router-dom'
 
 
 function Logement (){
+  document.getElementById('navAccueil').style.textDecoration="none"
+  document.getElementById('navAPropos').style.textDecoration="none"
+
   const {id} = useParams()
   let pageValid = false;
   for (let i=0;i<Loge.length;i++)
@@ -17,31 +19,31 @@ function Logement (){
       pageValid = true;
   if (!pageValid)
     document.location.href="/error"
-  return (<div class="logement">
+  return (<div className="logement">
     <Carrousel
     id = {id} 
     />
-    <div class="pres">
-    <div class="topH">
+    <div className="pres">
+    <div className="topH">
       <h1><Log index={id} s="title" /></h1>
-      <div class="host">
-        <Log class="hostN" index={id} s="hostN"/>
-        <Log class="hostP" index={id} s="hostP"/>
+      <div className="host">
+        <Log className="hostN" index={id} s="hostN"/>
+        <Log className="hostP" index={id} s="hostP"/>
       </div>
       </div>
     </div>
     <Log index={id} s="location"/>
-    <div class="tagsR">
+    <div className="tagsR">
       <Tags id={id} />
-      <div class="ratePhone">
+      <div className="ratePhone">
       <Rating id={id}/>
-        <div class="hostPhone">
-          <Log class="hostN" index={id} s="hostN"/>
-          <Log class="hostP" index={id} s="hostP"/>
+        <div className="hostPhone">
+          <Log className="hostN" index={id} s="hostN"/>
+          <Log className="hostP" index={id} s="hostP"/>
         </div>
       </div>
     </div>
-    <div class="logC">
+    <div className="logC">
     <Collapse
       title="Description"
       text=<Log index={id} s="description" />

@@ -1,4 +1,5 @@
 @import './setting.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 body, html { 
   font-family: 'Montserrat', sans-serif;
@@ -22,10 +23,41 @@ main {
 }
 
 .error {
-  font-size: 100px;
-  color:#FF6060;
-  display: flex;
-  justify-content: center;
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+    color:redColor;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 100px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    color:redColor;
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+  }
+  .retour {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .retour:link {
+    color: initial;
+  }
+  
+  .retour:visited {
+    color: initial;
+  }
 }
 
 .card {
@@ -74,16 +106,15 @@ nav {
   font-size: 25px;
   color: black!important;
   margin-top: 25px;
+}
 
-  a:link {
-    text-decoration: none;
-    color: initial;
-  }
-  
-  a:visited {
-    text-decoration: none; 
-    color: initial;
-  }
+#navAccueil {
+  text-decoration: none;
+  color: initial;
+}
+#navAPropos {
+  text-decoration: none; 
+  color: initial;
 }
 
 .gallery {
@@ -126,7 +157,7 @@ nav {
 }
 
 .collapsible {
-  background-color: #FF6060;
+  background-color: redColor;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -204,11 +235,11 @@ nav {
   margin-top: 50px;
 
   button {
-    width: 50px;
+    width: 53px;
     z-index: 2;
     border: none;
     background-color: transparent;
-    margin-left: 25px;
+    margin-left: 22px;
   }
 
   button:hover {
@@ -222,6 +253,7 @@ nav {
     margin-left: -75px;
     margin-right: -100px;
     border-radius: 20px;
+    margin-top: -7px;
   }
 }
 #numC {
@@ -230,6 +262,7 @@ nav {
     margin-top: -50px;
     color: white;
     margin-bottom: 40px;
+    
 }
 
 .logement {
@@ -237,7 +270,7 @@ nav {
   width: 90%;
   h1 {
     font-size: 32px;
-    color: #FF6060;
+    color: redColor;
     font-weight: 150;
   }
 
@@ -250,7 +283,7 @@ nav {
   .location{
     margin-top: -50px;
     margin-bottom: 22px;
-    font-weight: bolder;
+    font-weight: 500;
     font-size: 16px;
   }
 
@@ -258,9 +291,11 @@ nav {
     display:flex;
     column-gap: 8px;
     color:white;
+    flex-wrap: wrap;
+    row-gap: 10px;
     .tag{
-      background-color: #FF6060;
-      border-radius: 17px;
+      background-color: redColor;
+      border-radius: 7px;
       padding: 3px;
       font-size: 13px;
       padding-left: 25px;
@@ -281,7 +316,7 @@ nav {
       justify-content: end;
       column-gap: 15px;
       p{
-        color: #FF6060;
+        color: redColor;
         width: 80px;
         margin-top: 0px;
         text-align: right;
@@ -293,7 +328,10 @@ nav {
       img{
         height: 52px;
         border-radius: 50px;
-        margin-top: 15px;
+        margin-top: -18px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
       }
     }
   }
@@ -349,11 +387,12 @@ nav {
   .imgBannerAccueil {
     height: 111px;
     filter: drop-shadow(0px 0px 0px rgb(250, 250, 250)) brightness(0.35);
+    margin-top: 10px;
   }
 
   .banner {
     font-size: 24px;
-    margin-top: -83px;
+    margin-top: -89px;
     margin-left: 8%;
     margin-bottom: 70px;
     display: flex;
@@ -376,6 +415,9 @@ nav {
     svg {
       height: 33px;
       width: 33px;
+    }
+    .Logo {
+      margin-left: -12px;
     }
     .logo {
       margin-left: 0px;
@@ -403,7 +445,7 @@ nav {
   .aproposC{
     margin-left: 5%;
     width: 90%;
-    row-gap: 15px;
+    row-gap: 20px;
   }
   .chevron {
     width: 22px;
@@ -417,6 +459,8 @@ nav {
     height: 111px;
     filter: drop-shadow(0px 0px 0px rgb(250, 250, 250)) brightness(0.7);
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .ratePhone {
@@ -432,7 +476,7 @@ nav {
     justify-content: end;
     column-gap: 15px;
     p{
-      color: #FF6060;
+      color: redColor;
       width: 80px;
       margin-top: -12px;
       text-align: right;
@@ -442,10 +486,18 @@ nav {
     }
 
     img{
-      height: 52px;
+      height: 40px;
       border-radius: 50px;
-      margin-top: -20px;
+      margin-top: -14px;
     }
+  }
+
+  .pres {
+    margin-top: -10px;
+  }
+
+  .carrousel button {
+    margin-top: -40px;
   }
 
   footer {
@@ -465,7 +517,8 @@ nav {
     .logC{
       flex-direction: column;
       row-gap: 20px;
-      margin-top: 5px;
+      margin-top: -3px;
+      margin-bottom: -10px;
     }
 
     h1{
@@ -475,6 +528,7 @@ nav {
 
     .rate {
       column-gap: 6px;
+      margin-top: 3px;
       svg {
         width: 14px;
         height: 14px;
@@ -486,6 +540,7 @@ nav {
       margin-right: -40px;
       margin-left: -40px;
       border-radius: 10px;
+      margin-top: -40px;
     }
 
     #numC {
@@ -529,6 +584,19 @@ nav {
 
     .colL {
       width: 100%!important;
+    }
+  }
+
+  .error {
+    h1 {
+      font-size: 96px;
+    }
+    p {
+      margin-top: 75px;
+      font-size: 18px;
+    }
+    .retour {
+      font-size: 14px;
     }
   }
 }

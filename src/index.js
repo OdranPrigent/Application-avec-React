@@ -1,14 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Accueil from './pages/Accueil'
-import Layout from './layout'
-import Apropos from './pages/Apropos'
-import Logement from './pages/Logement'
-import Error from './pages/Error'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Accueil from './pages/Accueil';
+import Layout from './layout';
+import Apropos from './pages/Apropos';
+import Logement from './pages/Logement';
+import Error from './pages/Error';
 import './style/App.scss';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <Router>
       <Routes>
@@ -21,6 +22,5 @@ ReactDOM.render(
         </Route>
       </Routes>
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+  </React.StrictMode>
+);

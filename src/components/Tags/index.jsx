@@ -8,9 +8,9 @@ function Tags({id}){
     let tags = 1
     if (id >0)
         tags = log[id].tags;
-    return <div class="tags">
+    return <div className="tags">
     {log[id].tags.map((log) => (
-        <span class="tag" key={log}>{log}</span>
+        <span className="tag" key={log}>{log}</span>
       ))}
     </div>
 }

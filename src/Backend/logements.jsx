@@ -11,9 +11,9 @@ function logements({s, index}){
       ))}
     </ul>
   else if (s == "title")
-    return <p key={log[index].title} class="title">{log[index].title}</p>
+    return <p key={log[index].title} className="title">{log[index].title}</p>
   else if (s == "picture")
-    return <img key={log[index].cover} class="galleryPicture" src={log[index].cover}/>
+    return <img key={log[index].cover} className="galleryPicture" src={log[index].cover}/>
   else if (s == "description")
     return <p key={log[index].description}>{log[index].description}</p>
   else if (s == "equipments")
@@ -23,7 +23,7 @@ function logements({s, index}){
       ))}
     </ul>  
   else if (s == "location")
-    return <p key={log[index].location} class = "location" >{log[index].location}</p>
+    return <p key={log[index].location} className = "location" >{log[index].location}</p>
   else if (s=="hostN")
     return <p key={log[index].host} >{log[index].host.name}</p>
   else if (s=="hostP")
